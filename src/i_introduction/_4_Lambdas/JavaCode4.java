@@ -15,4 +15,13 @@ public class JavaCode4 extends JavaCode {
             }
         });
     }
+
+    public boolean task45(Collection<Integer> collection) {
+        return Iterables.any(collection, element -> element % 2 == 0);
+    }
+
+    public boolean task46(Collection<Integer> collection) {
+        return collection.stream().anyMatch(element -> element % 2 == 0);
+    }
+
 }

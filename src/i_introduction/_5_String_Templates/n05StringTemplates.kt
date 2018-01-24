@@ -9,6 +9,8 @@ fun example1(a: Any, b: Any) =
 fun example2(a: Any, b: Any) =
         "You can write it in a Java way as well. Like this: " + a + ", " + b + "!"
 
+//Any expression can be used: 1
+//if c == true, x= 1, y=2
 fun example3(c: Boolean, x: Int, y: Int) = "Any expression can be used: ${if (c) x else y}"
 
 fun example4() =
@@ -35,4 +37,4 @@ fun todoTask5(): Nothing = TODO(
     documentation = doc5(),
     references = { getPattern(); month })
 
-fun task5(): String = todoTask5()
+fun task5(): String = """\d{2} $month \d{4}"""
